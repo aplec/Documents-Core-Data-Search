@@ -13,6 +13,7 @@ class DocumentTableViewController: UIViewController, UITableViewDelegate, UITabl
        @IBOutlet weak var documentsTableView: UITableView!
        let dateFormatter = DateFormatter()
        var documents = [Document]()
+       let searchController = UISearchController(searchResultsController: nil)
 
        override func viewDidLoad() {
            super.viewDidLoad()
@@ -21,6 +22,8 @@ class DocumentTableViewController: UIViewController, UITableViewDelegate, UITabl
 
            dateFormatter.dateStyle = .medium
            dateFormatter.timeStyle = .medium
+        
+           setupSearchController()
        }
        
        override func viewWillAppear(_ animated: Bool) {
@@ -112,12 +115,21 @@ class DocumentTableViewController: UIViewController, UITableViewDelegate, UITabl
            }
        }
        
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
            if editingStyle == .delete {
                deleteDocument(at: indexPath)
            }
        }
        
-
+    func setupSearchController() {
+        definesPresentationContext = true
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.searchResultsUpdater = self as? UISearchResultsUpdating
+        searchController.searchBar.barTintColor = UIColor(white: 0.9, alpha: 0.9)
+        searchController.searchBar.placeholder = "Search documents"
+        searchController.hidesNavigationBarDuringPresentation = false
+        
+        documentsTableView.tableHeaderView = searchController.searchBar
+    }
 }
 
