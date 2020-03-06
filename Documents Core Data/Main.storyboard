@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Document Table View Controller-->
+        <!--Documents Table View Controller-->
         <scene sceneID="hCH-mg-PkV">
             <objects>
-                <viewController id="5IN-mh-C5G" customClass="DocumentTableViewController" customModule="Documents_Core_Data" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5IN-mh-C5G" customClass="DocumentsTableViewController" customModule="Documents_Core_Data" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eko-12-u1L">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -104,7 +104,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="documentsTableView" destination="SwV-tx-mq6" id="upZ-4Q-feF"/>
+                        <outlet property="documentsTableView" destination="SwV-tx-mq6" id="gjF-y6-408"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0q-C2-eU6" userLabel="First Responder" sceneMemberID="firstResponder"/>

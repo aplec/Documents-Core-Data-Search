@@ -20,6 +20,7 @@
 		5ADF781223FF9859003E8382 /* DocumentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF781123FF9859003E8382 /* DocumentCell.swift */; };
 		5ADF781523FFAA23003E8382 /* Document+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF781323FFAA23003E8382 /* Document+CoreDataClass.swift */; };
 		5ADF781623FFAA23003E8382 /* Document+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ADF781423FFAA23003E8382 /* Document+CoreDataProperties.swift */; };
+		5AEA39DF2411DEBE000E6774 /* SearchScope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AEA39DE2411DEBE000E6774 /* SearchScope.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		5ADF781123FF9859003E8382 /* DocumentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentCell.swift; sourceTree = "<group>"; };
 		5ADF781323FFAA23003E8382 /* Document+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataClass.swift"; sourceTree = "<group>"; };
 		5ADF781423FFAA23003E8382 /* Document+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		5AEA39DE2411DEBE000E6774 /* SearchScope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchScope.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				5ADF77E423FF7E22003E8382 /* Assets.xcassets */,
 				5ADF77E623FF7E22003E8382 /* LaunchScreen.storyboard */,
 				5ADF77E923FF7E22003E8382 /* Info.plist */,
+				5AEA39DE2411DEBE000E6774 /* SearchScope.swift */,
 			);
 			path = "Documents Core Data";
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5ADF781223FF9859003E8382 /* DocumentCell.swift in Sources */,
+				5AEA39DF2411DEBE000E6774 /* SearchScope.swift in Sources */,
 				5ADF781023FF984F003E8382 /* DocumentTableViewController.swift in Sources */,
 				5ADF781623FFAA23003E8382 /* Document+CoreDataProperties.swift in Sources */,
 				5ADF77D923FF7E1F003E8382 /* AppDelegate.swift in Sources */,
